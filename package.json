@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d --watch",
+    "deploy": "gh0oages -d client/public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tokki0401/Portfolio.git"
+  },
+  "author": "Gyuhun Lee",
+  "license": "ISC",
+  "homepage": "https://Tokki0401.github.io/Portfolio",
+  "bugs": {
+    "url": "https://github.com/Tokki0401/Portfolio/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
