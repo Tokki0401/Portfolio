@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tokki0401/Portfolio.git"
+    "url": "https://github.com/Tokki0401/portfolio.git"
   },
   "author": "Gyuhun Lee",
   "license": "ISC",
-  "homepage": "https://Tokki0401.github.io/Portfolio",
+  "homepage": "https://Tokki0401.github.io/portfolio",
   "bugs": {
-    "url": "https://github.com/Tokki0401/Portfolio/issues"
+    "url": "https://github.com/Tokki0401/portfolio/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
