@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d --watch",
-    "deploy": "gh0oages -d client/public"
+    "deploy": "gh-pages -d client/public"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   },
   "author": "Gyuhun Lee",
   "license": "ISC",
-  "homepage": "https://Tokki0401.github.io/Portfolio",
+  "homepage": "https://tokki0401.github.io/Portfolio",
   "bugs": {
     "url": "https://github.com/Tokki0401/Portfolio/issues"
   },
