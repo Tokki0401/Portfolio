@@ -16,7 +16,6 @@ class App extends React.Component {
     return (
       <div>
         <FrontPage />
-        <h1> 💩💩💩💩💩💩 </h1>
       </div>
     )
   }
