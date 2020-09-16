@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import FrontPage from './FrontPage.jsx';
-
+import AboutMe from './AboutMe.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,6 +16,7 @@ class App extends React.Component {
     return (
       <div>
         <FrontPage />
+        <AboutMe />
       </div>
     )
   }
