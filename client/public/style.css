@@ -29,7 +29,7 @@
 
 .name-color {
   color: #4da6ff;
-  padding-left: 5px;
+  padding-left: 14px;
   animation: frontPageNameColor 3s 1;
 }
 
@@ -47,6 +47,7 @@
 .about-me {
   align-items: center;
   min-height: 100vh;
+  height: 100vh;
   background-color: white;
   color: black;
   top: 0;
@@ -55,4 +56,41 @@
   right: 0;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 100px 0;
+  text-transform: uppercase;
+  animation: sectionTopDown 1s 1;
+  position: relative;
+}
+
+.about-me-container {
+  display: flex;
+  padding-left: 18%;
+  flex-flow: row wrap;
+}
+
+.picture {
+  flex: 0;
+  padding-right: 10%;
+}
+
+.detail {
+  flex: 1;
+  max-width: 511.99px;
+  padding-top: 8%;
+}
+
+.detail p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 4%;
+}
+
+@keyframes sectionTopDown {
+  0% {padding-top: 0px; opacity: 0.1;}
+  100% {padding-top: 100px; opacity: 1;}
 }
