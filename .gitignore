@@ -6,3 +6,5 @@ bundle.js
 
 # Package-lock
 package-lock.json
+
+utils/
