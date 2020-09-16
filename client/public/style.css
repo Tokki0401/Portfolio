@@ -17,7 +17,6 @@
   right: 0;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
-
 }
 
 .front-page-text {
@@ -43,4 +42,17 @@
 @keyframes frontPageNameColor {
   0% {color: white;}
   100% {color: #4da6ff;}
+}
+
+.about-me {
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
 }

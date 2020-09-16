@@ -7,7 +7,8 @@ module.exports = {
     path: path.join(__dirname, 'client/public'),
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
@@ -16,6 +17,17 @@ module.exports = {
             presets: ["@babel/preset-env", "@babel/preset-react"]
           }
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: false,
+            },
+          },
+        ],
       }
     ]
   }
