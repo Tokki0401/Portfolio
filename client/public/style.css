@@ -16,20 +16,81 @@
   bottom: 0;
   right: 0;
   font-weight: 700;
-  text-align: center;
   font-family: Montserrat, sans-serif;
-
 }
 
 .front-page-text {
-  width: 100%;
   position: absolute;
   top: 40%;
-  padding: 0 auto;
-  font-size: 5rem;
+  left: 24%;
+  font-size: 4.5rem;
+  animation: frontPage 1s 1;
 }
 
 .name-color {
   color: #4da6ff;
-  padding-left: 5px;
+  padding-left: 14px;
+  animation: frontPageNameColor 3s 1;
+}
+
+
+@keyframes frontPage {
+  0% {top: 50%; opacity: 0.1;}
+  100% {top: 40%; opacity: 1;}
+}
+
+@keyframes frontPageNameColor {
+  0% {color: white;}
+  100% {color: #4da6ff;}
+}
+
+.about-me {
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 100px 0;
+  text-transform: uppercase;
+  animation: sectionTopDown 1s 1;
+  position: relative;
+}
+
+.about-me-container {
+  display: flex;
+  padding-left: 18%;
+  flex-flow: row wrap;
+}
+
+.picture {
+  flex: 0;
+  padding-right: 10%;
+}
+
+.detail {
+  flex: 1;
+  max-width: 511.99px;
+  padding-top: 8%;
+}
+
+.detail p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 4%;
+}
+
+@keyframes sectionTopDown {
+  0% {padding-top: 0px; opacity: 0.1;}
+  100% {padding-top: 100px; opacity: 1;}
 }

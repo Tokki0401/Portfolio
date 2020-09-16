@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d --watch",
-    "deploy": "npm run build && gh-pages -d client/public"
+    "deploy": "webpack -d gh-pages -d client/public"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,12 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "file-loader": "^6.1.0",
+    "image-webpack-loader": "^7.0.0",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
