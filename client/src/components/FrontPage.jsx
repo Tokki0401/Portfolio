@@ -10,7 +10,6 @@ const Frontpage = (props) => {
           <br></br>
           I'm a Full Stack Engineer.
         </h1>
-
       </div>
     </section>
   )
