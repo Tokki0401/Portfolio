@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Contact = (props) => {
-  console.log(props);
   return (
     <section className='contact'>
       <div className='title'>Contact</div>
@@ -29,7 +28,7 @@ const Contact = (props) => {
         </div>
 
         <div>
-          <button type='button' onClick={() => props.sendEmail()}>Submit</button>
+          <button id='submit-btn' className='btn' type='button' disabled={!props.submitAllowed} onClick={() => props.sendEmail()} >Submit</button>
         </div>
       </div>
     </section>

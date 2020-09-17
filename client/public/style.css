@@ -132,7 +132,7 @@
   line-height: 1.5;
   width: 30%;
   margin: 0.4em 0 1.5em;
-  cursor: pointer;
+  cursor: text;
 }
 
 .textarea {
@@ -149,4 +149,17 @@
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+.btn {
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#submit-btn {
+  color: #4da6ff;
+  margin-bottom: 100px;
 }
