@@ -9,7 +9,7 @@ const AboutMe = (props) => {
       <div className='title'>About Me</div>
       <div className='about-me-container'>
         <div className='picture'>
-          <img src={Profile} alt='Profile Picture' />
+          <img src={Profile} alt='Profile Picture' id='profile-pic'/>
         </div>
         <div className='detail'>
           <p>I'm a software engineer currently living in Irvine, CA and looking for my next role.</p>
