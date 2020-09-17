@@ -162,4 +162,5 @@
 #submit-btn {
   color: #4da6ff;
   margin-bottom: 100px;
+  cursor: not-allowed;
 }

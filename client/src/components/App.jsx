@@ -15,24 +15,26 @@ class App extends React.Component {
       subject: '',
       email: '',
       message: '',
-      emailValidation: false,
-      submitAllowed: false
+      emailValidation: false
     }
 
     this.onInputChange = this.onInputChange.bind(this);
     this.sendEmail = this.sendEmail.bind(this);
     this.checkEmailValidation = this.checkEmailValidation.bind(this);
-    this.checkSubmitValidation = this.checkSubmitValidation.bind(this);
     this.enableSubmitButton = this.enableSubmitButton.bind(this);
+  }
+
+  componentDidMount() {
+    this.enableSubmitButton();
   }
 
   onInputChange(e) {
     const isEmailValid = this.checkEmailValidation();
-    const isSubmitAllowed = this.checkSubmitValidation();
 
     this.setState({
-      [e.name]: e.value
-    })
+      [e.name]: e.value,
+      emailValidation: isEmailValid
+    }, this.enableSubmitButton)
 
   }
 
@@ -40,17 +42,15 @@ class App extends React.Component {
     return validator.validate(this.state.email);
   }
 
-  checkSubmitValidation() {
+  enableSubmitButton() {
     const { subject, email, message, emailValidation } = this.state;
 
-    return subject && email && message && emailValidation ? true : false;
-  }
-
-  enableSubmitButton() {
-    if (this.state.submitAllowed) {
+    if (subject && email && message && emailValidation) {
       document.getElementById('submit-btn').disabled = false;
+      document.getElementById('submit-btn').style.cursor = "pointer";
     } else {
       document.getElementById('submit-btn').disabled = true;
+      document.getElementById('submit-btn').style.cursor = "not-allowed";
     }
   }
 
@@ -63,7 +63,7 @@ class App extends React.Component {
       <div>
         <FrontPage />
         <AboutMe />
-        <Contact onInputChange={this.onInputChange} sendEmail={this.sendEmail} submitAllowed={this.state.submitAllowed}/>
+        <Contact onInputChange={this.onInputChange} sendEmail={this.sendEmail}/>
       </div>
     )
   }
