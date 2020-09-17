@@ -105,7 +105,7 @@
 
 .contact {
   align-items: center;
-  background-color: black;
+  background-color: rgb(56, 55, 55);
   color: white;
   top: 0;
   left: 0;
@@ -113,4 +113,40 @@
   right: 0;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
+}
+
+.contact-container {
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  animation: fadeIn 2s 1;
+}
+
+.input-block {
+  display: block;
+}
+
+.input-field {
+  font-size: 20px;
+  line-height: 1.5;
+  width: 30%;
+  margin: 0.4em 0 1.5em;
+  cursor: pointer;
+}
+
+.textarea {
+  width: 40%;
+  height: 30%;
+  font-size: 20px;
+}
+
+#subject, #message, #email {
+  width: fit-content;
+  padding-left: 35%;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

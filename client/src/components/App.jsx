@@ -10,16 +10,23 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      name: '',
+      subject: '',
       email: '',
       message: ''
     }
 
     this.onInputChange = this.onInputChange.bind(this);
+    this.sendEmail = this.sendEmail.bind(this);
   }
 
   onInputChange(e) {
-    console.log(e);
+    this.setState({
+      [e.name]: e.value
+    })
+  }
+
+  sendEmail() {
+    console.log('working')
   }
 
   render() {
@@ -27,7 +34,7 @@ class App extends React.Component {
       <div>
         <FrontPage />
         <AboutMe />
-        <Contact onInputChange={this.onInputChange} />
+        <Contact onInputChange={this.onInputChange} sendEmail={this.sendEmail}/>
       </div>
     )
   }

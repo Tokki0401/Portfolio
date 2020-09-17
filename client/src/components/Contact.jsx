@@ -1,27 +1,35 @@
 import React from 'react';
 
 const Contact = (props) => {
+  console.log(props);
   return (
     <section className='contact'>
       <div className='title'>Contact</div>
-      <div>
-        <div>
-          <label>Name</label>
+      <div className='contact-container'>
 
-          <input type='text' name='name' required onChange={(e) => this.props.onInputChange(e)}></input>
+        <div>
+          <div id='email'>Email</div>
+          <div>
+            <input className='input-field' type='text' name='email' required onChange={(e) => props.onInputChange(e.target)}></input>
+          </div>
+        </div>
 
-        </div>
         <div>
-          <label>Email</label>
-          <span>
-            <input type='text' name='email' required onChange={(e) => this.props.onInputChange(e)}></input>
-          </span>
+          <div id='subject'>Subject</div>
+          <div>
+            <input className='input-field' type='text' name='subject' required onChange={(e) => props.onInputChange(e.target)}></input>
+          </div>
         </div>
+
         <div>
-          <label>Message</label>
-          <span>
-            <textarea type='text' name='message' required onChange={(e) => this.props.onInputChange(e)}></textarea>
-          </span>
+          <div id='message'>Message</div>
+          <div>
+            <textarea id='textarea' className='input-field' type='text' name='message' rows='10' cols='60' required onChange={(e) => props.onInputChange(e.target)}></textarea>
+          </div>
+        </div>
+
+        <div>
+          <button type='button' onClick={() => props.sendEmail()}>Submit</button>
         </div>
       </div>
     </section>
