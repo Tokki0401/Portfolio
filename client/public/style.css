@@ -81,7 +81,7 @@
 .detail {
   flex: 1;
   max-width: 511.99px;
-  padding-top: 8%;
+  padding: 50px 0;
 }
 
 .detail p {

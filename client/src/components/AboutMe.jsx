@@ -13,6 +13,7 @@ const AboutMe = (props) => {
         </div>
         <div className='detail'>
           <p>I'm a software engineer currently living in Irvine, CA and looking for my next role.</p>
+          <p>I have experience architecturing web applications on both the front and backend while managing a team of developers using Agile Software Development.</p>
           <p>I have experience in cutting-edge frameworks and technologies such as React and Node. I'm always open to take on challenges and learn new technologies. </p>
           <p>When I'm not coding, I enjoy playing video games and watching K-drama!
           </p>
