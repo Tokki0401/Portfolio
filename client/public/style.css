@@ -164,3 +164,51 @@
   margin-bottom: 100px;
   cursor: not-allowed;
 }
+
+.footer {
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.back-to-top {
+  font-size: 1.3rem;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.anchor {
+  color: white;
+}
+
+.anchor:hover {
+  color: #4da6ff;
+}
+
+.icons-container {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.icons-list {
+  border-bottom: 1px solid white;
+}
+
+.icons {
+  opacity: 0.4;
+  cursor: pointer;
+  color: white;
+  padding: 0 20px;
+}
+
+.icons:hover {
+  opacity: 1;
+}

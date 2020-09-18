@@ -6,6 +6,7 @@ import validator from 'email-validator';
 import FrontPage from './FrontPage.jsx';
 import AboutMe from './AboutMe.jsx';
 import Contact from './Contact.jsx';
+import Footer from './Footer.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -44,13 +45,14 @@ class App extends React.Component {
 
   enableSubmitButton() {
     const { subject, email, message, emailValidation } = this.state;
+    const submitButton = document.getElementById('submit-btn');
 
     if (subject && email && message && emailValidation) {
-      document.getElementById('submit-btn').disabled = false;
-      document.getElementById('submit-btn').style.cursor = "pointer";
+      submitButton.disabled = false;
+      submitButton.style.cursor = "pointer";
     } else {
-      document.getElementById('submit-btn').disabled = true;
-      document.getElementById('submit-btn').style.cursor = "not-allowed";
+      submitButton.disabled = true;
+      submitButton.style.cursor = "not-allowed";
     }
   }
 
@@ -64,6 +66,7 @@ class App extends React.Component {
         <FrontPage />
         <AboutMe />
         <Contact onInputChange={this.onInputChange} sendEmail={this.sendEmail}/>
+        <Footer />
       </div>
     )
   }
