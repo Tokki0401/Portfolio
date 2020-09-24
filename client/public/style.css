@@ -182,6 +182,9 @@ html {
   font-family: Montserrat, sans-serif;
 }
 
+.footer-container, .copyright {
+  animation: fadeIn 2s 1;
+}
 
 .back-to-top {
   font-size: 1.3rem;

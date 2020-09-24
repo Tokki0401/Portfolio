@@ -16,7 +16,9 @@ const Footer = (props) => {
           </span>
         </div>
       </div>
-      <p> &copy; 2020 Copyright - Gyuhun Lee</p>
+      <div className='copyright'>
+        <p> &copy; 2020 Copyright - Gyuhun Lee</p>
+      </div>
     </section>
   )
 }
