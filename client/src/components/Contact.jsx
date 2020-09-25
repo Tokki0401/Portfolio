@@ -28,7 +28,7 @@ const Contact = (props) => {
         </div>
 
         <div>
-          <button id='submit-btn' className='btn' type='button' onClick={() => props.sendEmail()} >Submit</button>
+          <button id='submit-btn' className='btn' type='button' onClick={() => props.sendEmail()}></button>
         </div>
       </div>
     </section>
