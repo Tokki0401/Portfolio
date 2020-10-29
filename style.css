@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -71,6 +75,7 @@
   display: flex;
   padding-left: 18%;
   flex-flow: row wrap;
+  animation: sectionLeftToRight 1s 1;
 }
 
 .picture {
@@ -84,6 +89,7 @@
   padding: 50px 0;
 }
 
+
 .detail p {
   font-size: 1.5rem;
   font-weight: 300;
@@ -93,4 +99,123 @@
 @keyframes sectionTopDown {
   0% {padding-top: 0px; opacity: 0.1;}
   100% {padding-top: 100px; opacity: 1;}
+}
+
+@keyframes sectionLeftToRight {
+  0% {padding-left: 8%; padding-top: 0; opacity: 0.1;}
+  100% {padding-left: 18%; padding-top: 0; opacity: 1;}
+}
+
+
+.contact {
+  align-items: center;
+  background-color: rgb(56, 55, 55);
+  color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
+
+.contact-container {
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  animation: fadeIn 2s 1;
+}
+
+.input-block {
+  display: block;
+}
+
+.input-field {
+  font-size: 20px;
+  line-height: 1.5;
+  width: 30%;
+  margin: 0.4em 0 1.5em;
+  cursor: text;
+}
+
+.textarea {
+  width: 40%;
+  height: 30%;
+  font-size: 20px;
+}
+
+#subject, #message, #email {
+  width: fit-content;
+  padding-left: 35%;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.btn {
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#submit-btn {
+  color: #4da6ff;
+  margin-bottom: 100px;
+  cursor: not-allowed;
+}
+
+.footer {
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
+
+.footer-container, .copyright {
+  animation: fadeIn 2s 1;
+}
+
+.back-to-top {
+  font-size: 1.3rem;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.anchor {
+  color: white;
+}
+
+.anchor:hover {
+  color: #4da6ff;
+}
+
+.icons-container {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.icons-list {
+  border-bottom: 1px solid white;
+}
+
+.icons {
+  opacity: 0.4;
+  cursor: pointer;
+  color: white;
+  padding: 0 20px;
+}
+
+.icons:hover {
+  opacity: 1;
 }
